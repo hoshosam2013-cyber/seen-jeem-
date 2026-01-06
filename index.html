@@ -15,11 +15,11 @@
         }
         body {
             font-family: 'Tajawal', sans-serif;
-            /* إضاءة أقوى عبر استخدام ألوان أفتح في مركز التدرج */
+            /* خلفية جديدة أكثر عمقاً وفخامة مع تدرجات لونية جذابة */
             background: 
-                radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.15), transparent 40%),
-                radial-gradient(circle at 80% 10%, rgba(251, 191, 36, 0.1), transparent 40%),
-                radial-gradient(circle at top center, #1e293b, #020617);
+                radial-gradient(circle at 15% 50%, rgba(79, 70, 229, 0.1), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(234, 179, 8, 0.08), transparent 25%),
+                linear-gradient(135deg, #0f172a 0%, #020617 100%);
             background-attachment: fixed;
             color: #f1f5f9;
             margin: 0;
@@ -29,7 +29,7 @@
         .glass {
             background: var(--card-bg);
             backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
         .jeopardy-grid {
@@ -59,11 +59,9 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <div id="root"></div>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
